@@ -1,0 +1,185 @@
+/**** Add your styles here ****/
+
+/*
+  Colour palette:
+  https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
+
+  #e63946
+  #f1faee
+  #a8dadc
+  #1d3557
+
+*/
+
+/*
+  The page div is our flex box and is setup
+  to take the full width and height of the page
+*/
+.page {
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Flex directives */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/*
+  To keep things simple we just target the
+  header directly. Here we are adding
+  padding to the top and bottom (nothing on the side)
+  and setting the background and text colours.
+*/
+header {
+  padding: 20px 20px;
+  color: #1d3557;
+}
+
+.header--banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--banner--logo {
+  height: 40px;
+}
+
+.header--banner--nav ul {
+  display: flex;
+  gap: 30px;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header--banner--nav ul li a {
+  font-weight: 900;
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.header--banner--nav ul li a:hover {
+  font-weight: 900;
+  color: #395987;
+  text-decoration: underline;
+}
+
+/*
+  To keep things simple we just target the
+  main element directly.
+
+  We add the align-self: center directive to
+  center the flex item in the middle of the screen
+
+  We set the minimum and maximum width so
+  that we can keep our box to a certain size.
+
+  Lastly we add padding, colours, and a box shadow to
+  make it look a bit better
+*/
+main {
+  align-self: center;
+
+  min-width: 700px;
+  max-width: 700px;
+
+  padding: 0px 20px 50px 20px;
+
+  color: #1d3557;
+  border-radius: 20px;
+}
+
+main h1 {
+  margin: 10px 0px 40px 0px;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.main--img {
+  margin: 0 auto;
+  height: 150px;
+}
+
+.main--form {
+  display: flex;
+}
+
+.main--form input {
+  flex-grow: 1;
+
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.main--form button {
+  border: none;
+  padding: 1.5rem 2rem;
+  background-color: #1d3557;
+  color: #f1faee;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+/*
+  To keep things simple we just target the
+  footer directly. Here we are adding
+  padding to the top and bottom (nothing on the side)
+  and setting the background and text colours.
+*/
+footer {
+  padding: 30px 20px;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+.footer--nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 30px;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer--nav ul li a {
+  font-weight: 900;
+  color: #f1faee;
+  text-decoration: underline;
+}
+
+.footer--nav--push {
+  margin-left: auto;
+}
+
+/****************************/
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1faee;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/****** Screen reader text *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

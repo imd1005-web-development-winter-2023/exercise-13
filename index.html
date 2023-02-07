@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 13</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+
+      YOU HAVE TO MODIFY THE HTML
+      BY ADDING DIVs AND CLASSES SO THAT YOU
+      CAN TARGET THE VARIOUS ELEMENTS
+
+    -->
+
+    <!-- Our page wrapper and main flex container -->
+    <div class="page">
+      <!-- Our Header Section -->
+      <header>
+        <h2 class="sr-only">Site header</h2>
+
+        <img src="images/logo.png" alt="logo" />
+
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Our Main Content Area -->
+      <main>
+        <img
+          src="images/student.png"
+          alt="Graphic of a student at a computer"
+        />
+
+        <h1>Student Database Search</h1>
+
+        <form>
+          <label class="sr-only" for="students">Search students</label>
+          <input
+            type="search"
+            id="students"
+            name="students"
+            placeholder="Search students"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </main>
+
+      <!-- Our Footer Area -->
+      <footer>
+        <h2 class="sr-only">Site footer</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Support</a></li>
+            <!--
+              Hint:
+              use a class on the third list
+              item to "push" the last two flex
+              items to the end of the row
+            -->
+            <li class=""><a href="#">Privacy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

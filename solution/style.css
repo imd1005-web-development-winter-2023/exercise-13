@@ -157,6 +157,12 @@ footer {
   text-decoration: underline;
 }
 
+/*
+  This is a neat trick
+  We use the margin-left auto
+  positioning trick to push
+  the element to the right
+*/
 .footer--nav--push {
   margin-left: auto;
 }
